@@ -11,5 +11,16 @@
         "destination": "/:path",
         "permanent": true
       }
+    ],
+    "headers": [
+      {
+        "source": "/script.js",
+        "headers": [
+          {
+            "key": "Content-Type",
+            "value": "application/javascript"
+          }
+        ]
+      }
     ]
   }  

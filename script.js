@@ -1,7 +1,7 @@
 const pages = [
   "Treasure-hunt.html",
-  "Biryani-Run",
-  "Corporate-Jargon",
+  "Biryani-Run.html",
+  "Corporate-Jargon.html",
   "DSA-World.html",
   "Pacwoman.html",
   "Battletrains.html",

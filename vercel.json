@@ -1,17 +1,20 @@
 {
-  "rewrites": [
-    {
-      "source": "/:path((?!.*\\..*).*)",
-      "destination": "/:path.html"
-    }
-  ],
-  "redirects": [
-    {
-      "source": "/:path.html",
-      "destination": "/:path",
-      "permanent": true
-    }
-  ],
+    "rewrites": [
+      { "source": "/Quackalogue", "destination": "/Quackalogue.html"},
+    { "source": "/Treasure-hunt", "destination": "/Treasure-hunt.html"},
+    { "source": "/Biryani-Run", "destination": "/Biryani-Run.html"},
+    { "source": "/Corporate-Jargon", "destination": "/Corporate-Jargon.html"},
+    { "source": "/DSA-World", "destination": "/DSA-World.html"},
+    { "source": "/Pacwoman", "destination": "/Pacwoman.html"},
+    { "source": "/Battletrains", "destination": "/Battletrains.html"},
+    { "source": "/Dont-pop-the-duckie", "destination": "/Dont-pop-the-duckie.html"},
+    { "source": "/Othello", "destination": "/Othello.html"},
+    { "source": "/Squid-game", "destination": "/Squid-game.html"},
+    { "source": "/menu", "destination": "/menu.html"},
+    { "source": "/leaderboard", "destination": "/leaderboard.html"},
+    { "source": "/about", "destination": "/about.html"},
+    { "source": "/home", "destination": "/home.html"}
+    ],
   "headers": [
     {
       "source": "/script.js",

@@ -1,14 +1,14 @@
 const pages = [
-  "Treasure-hunt.html",
-  "Biryani-Run.html",
-  "Corporate-Jargon.html",
-  "DSA-World.html",
-  "Pacwoman.html",
-  "Battletrains.html",
-  "Dont-pop-the-duckie.html",
-  "Othello.html",
-  "Squid-game.html",
-  "Quackalogue.html",
+  "Treasure-hunt",
+  "Biryani-Run",
+  "Corporate-Jargon",
+  "DSA-World",
+  "Pacwoman",
+  "Battletrains",
+  "Dont-pop-the-duckie",
+  "Othello",
+  "Squid-game",
+  "Quackalogue",
 ];
 
 // Get current page name (handles query parameters too)
@@ -33,22 +33,23 @@ function updateProgressBar() {
 // Navigate to the next page
 function goToNextPage() {
   if (currentIndex < pages.length - 1) {
-    localStorage.setItem("progress", currentIndex + 1); // Save progress
-    window.location.href = pages[currentIndex + 1];
+    localStorage.setItem("progress", currentIndex + 1);
+    window.location.href = "/" + pages[currentIndex + 1];
   }
 }
 
-// Navigate to the previous page
+//navigate to previous page
 function goToPrevPage() {
   if (currentIndex > 0) {
-    localStorage.setItem("progress", currentIndex - 1); // Save progress
-    window.location.href = pages[currentIndex - 1];
+    localStorage.setItem("progress", currentIndex - 1);
+    window.location.href = "/" + pages[currentIndex - 1];
   }
 }
 
+//navigate to next page
 function navigateTo(page) {
-  console.log("Navigating to:", page); // Debugging log
-  window.open(`${page}.html`, '_blank'); // Ensure correct navigation
+  console.log("Navigating to:", page);
+  window.open("/" + page, '_blank');
 }
 
 function closeMenu() {
@@ -59,7 +60,9 @@ function closeMenu() {
     window.close();
   }
 }
-
+//adding logs
+console.log("Current pathname:", window.location.pathname);
+console.log("Extracted page name:", window.location.pathname.split("/").pop().split("?")[0]);
 // Ensure progress bar updates when the page loads
 document.addEventListener("DOMContentLoaded", updateProgressBar);
 

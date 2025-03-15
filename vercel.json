@@ -1,6 +1,6 @@
 {
     "rewrites": [
-      { "source": "/Quackalogue", "destination": "/Quackalogue.html"},
+    { "source": "/Quackalogue", "destination": "/Quackalogue.html"},
     { "source": "/Treasure-hunt", "destination": "/Treasure-hunt.html"},
     { "source": "/Biryani-Run", "destination": "/Biryani-Run.html"},
     { "source": "/Corporate-Jargon", "destination": "/Corporate-Jargon.html"},
@@ -14,13 +14,6 @@
     { "source": "/leaderboard", "destination": "/leaderboard.html"},
     { "source": "/about", "destination": "/about.html"},
     { "source": "/home", "destination": "/home.html"}
-    ],
-    "redirects": [
-      {
-        "source": "/Quackalogue.html",
-        "destination": "/Quackalogue",
-        "permanent": false
-      }
     ],
   "headers": [
     {

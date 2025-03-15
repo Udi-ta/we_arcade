@@ -19,7 +19,7 @@
       {
         "source": "/Quackalogue.html",
         "destination": "/Quackalogue",
-        "permanent": true
+        "permanent": false
       }
     ],
   "headers": [

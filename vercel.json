@@ -13,7 +13,14 @@
     { "source": "/menu", "destination": "/menu.html"},
     { "source": "/leaderboard", "destination": "/leaderboard.html"},
     { "source": "/about", "destination": "/about.html"},
-    { "source": "/home.html", "destination": "/home"}
+    { "source": "/home", "destination": "/home.html"}
+    ],
+    "redirects": [
+      {
+        "source": "/Quackalogue.html",
+        "destination": "/Quackalogue",
+        "permanent": true
+      }
     ],
   "headers": [
     {
